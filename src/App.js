@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <Header />
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <main>
         <Sidebar />
         <Home />
         <Searchbar />
-      </div>
+      </main>
       <Footer />
     </>
   );
