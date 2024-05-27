@@ -1,0 +1,105 @@
+.wrapper {
+  .sidebar {
+    width: 270px;
+    height: 100vh;
+    overflow: auto;
+    background: #111330;
+    padding: 16px 0px;
+    .open{
+      display: flex;
+    }
+    .app-button {
+      cursor: pointer;
+      margin: 0px 16px;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: #272c46;
+      border-radius: 12px;
+      border: 1px solid #2e395f;
+      color: white;
+      font-family: Arial, sans-serif;
+      .dropdown-icon {
+        margin-left: auto;
+        background-color: #141526;
+        border-radius: 5px;
+        padding: 2px 5px;
+        .arrow-icon {
+          width: 12px;
+          height: 10px;
+        }
+      }
+      .icon-container {
+        margin-right: 8px;
+        .user-icon {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .text-container {
+        flex-grow: 1;
+        .app-name {
+          font-family: "CustomFont1";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: left;
+        }
+        .app-description {
+          margin-top: 6px;
+          font-family: "CustomFont1";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 12px;
+          text-align: left;
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      .menu-title {
+        margin-top: 16px;
+        a {
+          color: #fff !important;
+        }
+      }
+      .arrow-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    h2 {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    ul {
+      padding: 12px 24px;
+      li {
+        padding: 8px 0px;
+        a {
+          font-family: "CustomFont1";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+          text-align: left;
+          color: #bbb;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; 
+  }
+
+  .sidebar.open {
+    display: block !important; 
+    width: 100%;
+  }
+}

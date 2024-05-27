@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+.wrapper-bar {
+    .sidebar-first {
+        width: 270px;
+        height: 100vh;
+        overflow: auto;
+        margin-top: 16px;
+        background: #111231;
+        .open {
+            display: flex;
+        }
+        hr {
+            height: 1px;
+            background-color: #175790;
+            border: none;
+        }
+        ul {
+            margin-top: 12px;
+            li {
+                padding: 12px 28px;
+                a {
+                    color: #bbb;
+                    display: block;
+                    font-family: "CustomFont1";
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    text-align: left;
+                }
+            }
+        }
+        .input-case {
+            position: relative;
+            margin: 0px 16px;
+            .input-field {
+                width: 100%;
+                outline: 0;
+                background: transparent;
+                font-size: 16px;
+                color: #dbdbdb;
+                border: none;
+                padding: 8px 10px 8px 28px;
+                border-radius: 40px;
+                background-color: #272c46;
+            }
+            .icon {
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                color: #999;
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+.input-field::placeholder {
+    color: #e8f1f2;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar-first {
+        display: none;
+    }
+
+    .sidebar-first.open {
+        display: block !important;
+        width: 100%;
+    }
+}
